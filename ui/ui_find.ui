@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Malgun Gothic</family>
+    <pointsize>16</pointsize>
+   </font>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::FocusPolicy::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Digital Olfaction Solution</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonStyle::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_background">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-10</y>
+      <width>1920</width>
+      <height>1080</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1920</width>
+      <height>1080</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>맑은 고딕</family>
+      <pointsize>64</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	background-color : #F9F9F9
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_find_back">
+    <property name="geometry">
+     <rect>
+      <x>64</x>
+      <y>64</y>
+      <width>74</width>
+      <height>73</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Malgun Gothic</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-image : url(./ui/images/common/back_Button.png);
+	border : 0px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>190</y>
+      <width>1849</width>
+      <height>851</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>-1006</y>
+       <width>1835</width>
+       <height>1855</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>184</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame {
+	background-image: url(./ui/images/find/age/age_background.png);
+	border : 0px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <widget class="QPushButton" name="pb_age_teens">
+         <property name="geometry">
+          <rect>
+           <x>500</x>
+           <y>40</y>
+           <width>162</width>
+           <height>100</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/age/default/age_teens.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_age_twenties">
+         <property name="geometry">
+          <rect>
+           <x>720</x>
+           <y>40</y>
+           <width>162</width>
+           <height>100</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/age/default/age_twenties.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_age_thirties">
+         <property name="geometry">
+          <rect>
+           <x>950</x>
+           <y>40</y>
+           <width>162</width>
+           <height>100</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/age/default/age_thirties.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_age_forties">
+         <property name="geometry">
+          <rect>
+           <x>1170</x>
+           <y>40</y>
+           <width>162</width>
+           <height>100</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/age/default/age_forties.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_age_fifties">
+         <property name="geometry">
+          <rect>
+           <x>1390</x>
+           <y>40</y>
+           <width>162</width>
+           <height>100</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/age/default/age_fifties.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_age_sixties">
+         <property name="geometry">
+          <rect>
+           <x>1610</x>
+           <y>40</y>
+           <width>162</width>
+           <height>100</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/age/default/age_sixties.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Orientation::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Policy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>30</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>184</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame {
+	background-image: url(./ui/images/find/personality/personality_background.png);
+	border : 0px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <widget class="QPushButton" name="pb_per_extraversion">
+         <property name="geometry">
+          <rect>
+           <x>580</x>
+           <y>30</y>
+           <width>162</width>
+           <height>129</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/personality/default/personality_extraversion.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_per_openness">
+         <property name="geometry">
+          <rect>
+           <x>800</x>
+           <y>30</y>
+           <width>160</width>
+           <height>133</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/personality/default/personality_openness.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_per_neuroticism">
+         <property name="geometry">
+          <rect>
+           <x>1020</x>
+           <y>30</y>
+           <width>160</width>
+           <height>129</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/personality/default/personality_neuroticism.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_per_diligence">
+         <property name="geometry">
+          <rect>
+           <x>1240</x>
+           <y>30</y>
+           <width>160</width>
+           <height>132</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/personality/default/personality_diligence.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_per_agreeableness">
+         <property name="geometry">
+          <rect>
+           <x>1460</x>
+           <y>30</y>
+           <width>160</width>
+           <height>133</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/personality/default/personality_agreeableness.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Orientation::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Policy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>30</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>184</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame {
+	background-image: url(./ui/images/find/gender/gender_background.png);
+	border : 0px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <widget class="QPushButton" name="pb_gender_man">
+         <property name="geometry">
+          <rect>
+           <x>750</x>
+           <y>20</y>
+           <width>296</width>
+           <height>142</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/gender/default/gender_man.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_gender_woman">
+         <property name="geometry">
+          <rect>
+           <x>1160</x>
+           <y>20</y>
+           <width>296</width>
+           <height>142</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/gender/default/gender_woman.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Orientation::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Policy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>30</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>423</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame {
+	background-image: url(./ui/images/find/preferred_scent/scent_background.png);
+	border : 0px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <widget class="QPushButton" name="pb_pref_aromatic">
+         <property name="geometry">
+          <rect>
+           <x>500</x>
+           <y>20</y>
+           <width>192</width>
+           <height>172</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/preferred_scent/default/scent_aromatic.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_pref_citrus">
+         <property name="geometry">
+          <rect>
+           <x>720</x>
+           <y>20</y>
+           <width>192</width>
+           <height>172</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/preferred_scent/default/scent_citrus.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_pref_woody">
+         <property name="geometry">
+          <rect>
+           <x>940</x>
+           <y>20</y>
+           <width>192</width>
+           <height>172</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/preferred_scent/default/scent_woody.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_pref_floral">
+         <property name="geometry">
+          <rect>
+           <x>1160</x>
+           <y>20</y>
+           <width>192</width>
+           <height>172</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/preferred_scent/default/scent_floral.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_pref_spicy">
+         <property name="geometry">
+          <rect>
+           <x>1380</x>
+           <y>20</y>
+           <width>192</width>
+           <height>172</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/preferred_scent/default/scent_spicy.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_pref_chypre">
+         <property name="geometry">
+          <rect>
+           <x>1600</x>
+           <y>20</y>
+           <width>192</width>
+           <height>172</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/preferred_scent/default/scent_chypre.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_pref_animalic">
+         <property name="geometry">
+          <rect>
+           <x>940</x>
+           <y>220</y>
+           <width>192</width>
+           <height>172</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/preferred_scent/default/scent_animalic.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_pref_aldehyde">
+         <property name="geometry">
+          <rect>
+           <x>1600</x>
+           <y>220</y>
+           <width>192</width>
+           <height>172</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/preferred_scent/default/scent_aldehyde.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_pref_oriental">
+         <property name="geometry">
+          <rect>
+           <x>1160</x>
+           <y>220</y>
+           <width>192</width>
+           <height>172</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/preferred_scent/default/scent_oriental.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_pref_fougere">
+         <property name="geometry">
+          <rect>
+           <x>500</x>
+           <y>220</y>
+           <width>192</width>
+           <height>172</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/preferred_scent/default/scent_fougere.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_pref_amber">
+         <property name="geometry">
+          <rect>
+           <x>1380</x>
+           <y>220</y>
+           <width>192</width>
+           <height>172</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/preferred_scent/default/scent_amber.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_pref_fruity">
+         <property name="geometry">
+          <rect>
+           <x>720</x>
+           <y>220</y>
+           <width>192</width>
+           <height>172</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/preferred_scent/default/scent_fruity.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Orientation::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Policy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>30</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_5">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>278</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame {
+	background-image: url(./ui/images/find/color/color_background.png);
+	border : 0px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <widget class="QPushButton" name="pb_color_red">
+         <property name="geometry">
+          <rect>
+           <x>520</x>
+           <y>40</y>
+           <width>160</width>
+           <height>184</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/color/default/color_red.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_color_orange">
+         <property name="geometry">
+          <rect>
+           <x>700</x>
+           <y>40</y>
+           <width>162</width>
+           <height>184</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/color/default/color_orange.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_color_yellow">
+         <property name="geometry">
+          <rect>
+           <x>880</x>
+           <y>40</y>
+           <width>162</width>
+           <height>184</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/color/default/color_yellow.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_color_green">
+         <property name="geometry">
+          <rect>
+           <x>1060</x>
+           <y>40</y>
+           <width>162</width>
+           <height>184</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/color/default/color_green.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_color_blue">
+         <property name="geometry">
+          <rect>
+           <x>1240</x>
+           <y>40</y>
+           <width>162</width>
+           <height>184</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/color/default/color_blue.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_color_navy">
+         <property name="geometry">
+          <rect>
+           <x>1420</x>
+           <y>40</y>
+           <width>162</width>
+           <height>184</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/color/default/color_navy.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_color_purple">
+         <property name="geometry">
+          <rect>
+           <x>1600</x>
+           <y>40</y>
+           <width>162</width>
+           <height>184</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/color/default/color_purple.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Orientation::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Policy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>30</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_6">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>184</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame {
+	background-image: url(./ui/images/find/price/price_background.png);
+	border : 0px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <widget class="QPushButton" name="pb_price_entry">
+         <property name="geometry">
+          <rect>
+           <x>710</x>
+           <y>40</y>
+           <width>163</width>
+           <height>100</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/price/default/price_entry.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_price_middle">
+         <property name="geometry">
+          <rect>
+           <x>970</x>
+           <y>40</y>
+           <width>163</width>
+           <height>100</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/price/default/price_middle.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_price_highend">
+         <property name="geometry">
+          <rect>
+           <x>1230</x>
+           <y>40</y>
+           <width>163</width>
+           <height>100</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/price/default/price_high-end.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_7">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>184</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame {
+	border : 0px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <widget class="QPushButton" name="pb_find_recommend">
+         <property name="geometry">
+          <rect>
+           <x>650</x>
+           <y>30</y>
+           <width>713</width>
+           <height>127</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-image : url(./ui/images/find/recommend_button.png);
+	border : 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+     <zorder>frame_2</zorder>
+     <zorder>frame_3</zorder>
+     <zorder>frame_4</zorder>
+     <zorder>frame_5</zorder>
+     <zorder>verticalSpacer_6</zorder>
+     <zorder>frame_6</zorder>
+     <zorder>verticalSpacer_7</zorder>
+     <zorder>frame</zorder>
+     <zorder>frame_7</zorder>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>76</y>
+      <width>1100</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	image : url(./ui/images/find/navi_title.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
